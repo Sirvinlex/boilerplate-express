@@ -19,7 +19,7 @@ const handler = (req, res) => {
     res.sendFile(absolutePath);
 }
 const handler2 = (req, res) => {
-    if (process.env.MESSAGE_STYLE === "uppercase") res.json({"message": "HELLO JSON"})
+    if (process.env.MESSAGE_STYLE === "uppercase") res.json({"message": "Hello World".toUpperCase()})
     else res.json({"message": "Hello json"})
 }
 const middleWareFunc2 = (req, res, next) =>{
